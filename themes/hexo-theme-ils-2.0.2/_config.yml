@@ -1,0 +1,168 @@
+# ------------------------------------------------------------
+# Theme basic info (please don't change)
+# ------------------------------------------------------------
+theme_info:
+  name: ILS
+  version: 2.0.2
+  author: XPoet
+  repository: https://github.com/XPoet/hexo-theme-ils
+
+
+# ------------------------------------------------------------
+# Theme style settings
+# ------------------------------------------------------------
+style:
+  # Theme primary color
+  primary_color: "#4e6ef2"
+
+  # favicon
+  favicon: images/favicon.png
+
+  # avatar
+  avatar: images/avatar.png
+
+
+# ------------------------------------------------------------
+# Navigation menu
+# ------------------------------------------------------------
+menu:
+  归档: /archives
+  知识: /categories/K
+  生活: /categories/L
+  #我: /me/index.html
+  相册: /image/
+  #歌单: /playlist
+  歌单: /about
+  #杰伦: /jielun/index.html
+
+
+# ------------------------------------------------------------
+# RSS
+# Dependencies: hexo-generator-feed
+# See: https://github.com/hexojs/hexo-generator-feed
+# ------------------------------------------------------------
+rss:
+  enable: false
+
+
+# ------------------------------------------------------------
+# Comment plugin
+# ------------------------------------------------------------
+comments:
+  # Valine
+  # See: https://github.com/xCss/Valine
+  valine:
+    enable: true
+    appid: 'a4fsouC5uoxRXyTMbvR87TFc-gzGzoHsz'                # your leancloud application appid
+    appkey: 'OWvSvXpEk2ka1CaslX6txcrO'            # your leancloud application appkey
+    meta: ['nick','mail','link']              # comment input meta, type: Array, values: ['nick','mail','link']
+    placeholder: '过收灯、有些寒在。
+「夜行船·正月十八日闻卖杏花有感」宋代 · 史达祖'       # your placeholder
+    enableQQ: true
+    visitor: true
+  # Gitalk
+  # See: https://github.com/gitalk/gitalk
+  gitalk:
+    enable: false
+    github_id:             # GitHub repo owner
+    repository:            # Repository name to store issues
+    client_id:             # GitHub Application Client ID
+    client_secret:         # GitHub Application Client Secret
+
+
+# ------------------------------------------------------------
+# Website count
+# ------------------------------------------------------------
+website_count:
+  # busuanzi
+  # See: http://ibruce.info/2015/04/04/busuanzi/
+  busuanzi_count:
+    enable: true
+    site_uv: true
+    site_pv: true
+    page_pv: true
+
+
+# ------------------------------------------------------------
+# Local Search
+# Dependencies: hexo-generator-searchdb
+# See: https://github.com/theme-next/hexo-generator-searchdb
+# ------------------------------------------------------------
+local_search:
+  enable: true
+
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto  # values: auto | manual
+
+  # Unescape html strings to the readable one.
+  unescape: true
+
+  # Preload the search data when the page loads.
+  preload: true
+
+
+# ------------------------------------------------------------
+# Post word count
+# Dependencies: hexo-wordcount
+# See: https://github.com/willin/hexo-wordcount
+# ------------------------------------------------------------
+post_wordcount:
+  enable: true
+  wordcount: true  # word count, one article
+  min2read: true   # time to read, one article
+
+
+# ------------------------------------------------------------
+# Home page article block display settings
+# ------------------------------------------------------------
+home_article:
+  category:
+    enable: true     # show category in home page article block
+    limit: 3          # max number of categories shown in home page article block
+  tag:
+    enable: true     # show tags in home page article block
+    limit: 5          # max number of tags shown in home page article block
+
+
+# ------------------------------------------------------------
+# Code copy
+# ------------------------------------------------------------
+code_copy:
+  enable: true
+  style: default        # values: default | flat | mac
+
+
+# ------------------------------------------------------------
+# Sidebar tools
+# ------------------------------------------------------------
+side_tools:
+  enable: true
+
+
+# ------------------------------------------------------------
+# Back to top
+# ------------------------------------------------------------
+back2top:
+  enable: true
+
+
+# ------------------------------------------------------------
+# Table of Contents in the Sidebar
+# ------------------------------------------------------------
+toc:
+  enable: false
+  # Automatically add list number to toc.
+  number: true
+
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: false
+
+
+# ------------------------------------------------------------
+# Magic
+# ------------------------------------------------------------
+magic:
+  enable: true
+  scale: false    # scale effect when the mouse hover
+  shadow: true   # shadow effect when the mouse hover

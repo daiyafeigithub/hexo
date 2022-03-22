@@ -1,0 +1,15 @@
+<div class="fade-in-down-animation">
+    <div class="category-container">
+        <div class="category-name">
+            </i> 知&nbsp;识 
+             
+        </div>
+        <%= page.posts.length %> 篇
+        <div class="category-post-list">
+          <%- partial('_partial/category-article-list', {posts_new: page.posts}) %> 
+        </div>
+    </div>
+    <div class="category-paginator">
+        <%- partial('_partial/paginator', {pageObject: page}) %>
+    </div>
+</div>

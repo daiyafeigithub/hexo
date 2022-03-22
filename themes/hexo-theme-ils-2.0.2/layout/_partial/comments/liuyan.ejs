@@ -1,0 +1,55 @@
+<% if(
+        theme.comments.valine.enable
+        && theme.comments.valine.appid
+        && theme.comments.valine.appkey
+) { %>
+    <div class="valine-container" style="width:100%;margin:auto">
+           <p  style="width:80%;height:40px;display:block;font-size:25px;margin-bottom:2%;font-family:'Microsoft Yahei';font-weight:800;"><i class='fa fa-comment'></i>&nbsp;&nbsp;留&nbsp;&nbsp;言</p>
+
+        <script src='/js/Valine.min.js'></script>
+
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: '<%= theme.comments.valine.appid %>',
+                appKey: '<%= theme.comments.valine.appkey %>',
+                meta: '<%= theme.comments.valine.meta %>'.split(','),
+                avatar: 'monsterid',
+                enableQQ: true,
+                placeholder: '<%= theme.comments.valine.placeholder %>',
+                lang: '<%= config.language %>'.toLowerCase()
+            });
+
+
+            // Valine 评论列表增加"作者"标识
+            const getValineDomTimer = setInterval(() => {
+                const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                if (vcards.length > 0) {
+                    for (let vcard of vcards) {
+                        const vnick = vcard.querySelector('.vhead .vnick');
+                        if (vnick.innerHTML.toLocaleLowerCase() === '<%= config.author %>'.toLocaleLowerCase()) {
+                            vcard.classList.add('author');
+                        }
+                    }
+                    clearInterval(getValineDomTimer);
+                } else {
+                    clearInterval(getValineDomTimer);
+                }
+            }, 2000);
+        </script>
+                <style>
+        .v[data-class=v] .vrow .vcol.vcol-30 {
+    display:none
+}
+.v[data-class=v] .vrow .vcol.vcol-70 {
+    width: 100%;
+}
+.v[data-class=v] .vwrap .vheader .vinput {
+    width: 33.33%;
+
+}
+
+        </style>
+    </div>
+<% } %>

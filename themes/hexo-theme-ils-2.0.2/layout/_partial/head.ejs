@@ -1,0 +1,31 @@
+<head>
+    <meta charset="utf-8">
+    <%
+    let title = page.title;
+    if (is_archive()) {
+        title = '时间归档';
+        if (is_month()) {
+            title += ': ' + page.year + '/' + page.month;
+        } else if (is_year()) {
+            title += ': ' + page.year;
+        }
+    } else if (is_category()) {
+        title = __('category') + ': ' + page.category;
+    } else if (is_tag()) {
+        title = __('tag') + ': ' + page.tag;
+    } else if (page.title === 'about') {
+        title = '留言'
+    }
+    %>
+    <title>
+        <% if (title){ %><%= title %> | <% } %><%= config.title %>
+    </title>
+    <meta name="baidu-site-verification" content="code-Unie9bbl09" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <% if (theme.style.favicon){ %>
+        <%- favicon_tag(theme.style.favicon) %>
+    <% } %>
+    <%- css('css/style') %>
+    <%- export_config() %>
+</head>
+
