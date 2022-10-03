@@ -16,10 +16,10 @@ style:
   primary_color: "#4e6ef2"
 
   # favicon
-  favicon: images/favicon.png
+  favicon: images/avatar.jpg
 
   # avatar
-  avatar: images/avatar.png
+  avatar: images/avatar.jpg
 
 
 # ------------------------------------------------------------
@@ -30,9 +30,9 @@ menu:
   知识: /categories/K
   生活: /categories/L
   #我: /me/index.html
-  相册: /image/
+  #相册: /image/
   #歌单: /playlist
-  歌单: /about
+  杰伦专场: /about
   #杰伦: /jielun/index.html
 
 
