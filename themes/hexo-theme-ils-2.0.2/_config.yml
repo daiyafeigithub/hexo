@@ -31,9 +31,9 @@ menu:
   生活: /categories/L
   #我: /me/index.html
   #相册: /image/
-  #歌单: /playlist
-  杰伦专场: /about
-  #杰伦: /jielun/index.html
+  #歌藏: /playlist
+  #杰伦专场: /about
+  杰伦专场: /jielun
 
 
 # ------------------------------------------------------------

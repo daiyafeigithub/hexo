@@ -1,6 +1,5 @@
 title: about
 ---
-{% meting "8644016848" "tencent" "playlist" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}
 {% aplayerlist %}
 {
   "narrow": false,
